@@ -1,0 +1,2 @@
+# RabbitMQ.Wrapper
+RabbitMQ.Wrapper
