@@ -1,0 +1,6 @@
+﻿<configuration>
+  <configSections>
+    <section name="RabbitConfig" type="RabbitMQ.Wrapper.RabbitConfig, RabbitMQ.Wrapper"/>
+  </configSections>
+  <RabbitConfig UserName="admin" Password="admin" HostName="localhost" Port="5672" VirtualHost="/" />
+</configuration>

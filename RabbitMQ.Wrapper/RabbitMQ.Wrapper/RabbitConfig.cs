@@ -13,7 +13,11 @@ namespace RabbitMQ.Wrapper
     public sealed class RabbitConfig : ConfigurationSection
     {
         [ConfigurationProperty("HostName", DefaultValue = "localhost")]
-        public string HostName { get; set; }
+        public string HostName
+        {
+            get { return (string)this["HostName"]; }
+            set { this["HostName"] = value; }
+        }
 
         [ConfigurationProperty("UserName", DefaultValue = "admin")]
         public string UserName
